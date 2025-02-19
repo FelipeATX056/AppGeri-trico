@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    min-height: 100vh;
+    background-image: url(/IMG/bg.png);
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    max-width: 1800px;
+    background: #e9e9e9;
+    padding: 20px;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 800px;
+}
+
+.layout {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    height: 730px;
+    background: #E9E9E9;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.sidebar h1 {
+    color: #009ee2;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    cursor: pointer;
+    color: #3d3d3d;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.sidebar ul li:hover {
+    background: #d0ebff;
+    color: #009ee2;
+}
+
+.content {
+    flex: 1;
+    padding: 30px;
+}
+
+.cont {
+    background-color: rgb(226, 226, 226);
+    max-width: 1000px;
+    height: 100%;
+    border-radius: 20px;
+    width: 100%;
+}
+
+h1 {
+    color: #3d3d3d;
+    margin: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.search-button {
+    background-color: #009ee2;
+    color: white;
+    padding: 0 20px; /* Reducido el padding horizontal */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 2px; /* Espacio entre el ícono y el texto */
+    white-space: nowrap; /* Evita que el texto se rompa en múltiples líneas */
+}
+
+/* Estilos actualizados de la tarjeta y botones */
+.sede-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.2s;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: auto;
+    min-height: 100px;
+    width: 950px;
+    position: relative;
+    cursor: pointer;
+}
+
+.sede-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sede-card:active {
+    border: 2px solid #009ee2;
+}
+
+.sede-icon {
+    background-color: #e3e3e3c2;
+    padding: 12px;
+    border-radius: 50px;
+    margin-right: 30px;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sede-info {
+    flex-grow: 1;
+}
+
+.full-name {
+    font-size: 17px;
+    color: #009ee2;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.CC {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.add-button, .delete-button {
+    background-color: #009ee2;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-button {
+    background: #3d3d3d;
+}
+
+.delete-button:hover {
+    background: #6f6f6f;
+}
+
+.add-button:hover {
+    background: #0088c7;
+}
+
+/* Estilos del modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal-buttons button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.confirm {
+    background: #5cb85c;
+    color: white;
+}
+
+.cancel {
+    background: #d9534f;
+    color: white;
+}
+
+/* Estilos del dropdown y roles */
+.sedes-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    width: 100%;
+    margin-top: 10px;
+    display: none;
+}
+
+.sede-card.active {
+    height: auto;
+}
+
+.sede-card.active .sedes-dropdown {
+    display: block !important;
+}
+
+.sedes-dropdown button {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    margin: 5px 0;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 5px;
+}
+
+.sedes-dropdown button:hover {
+    background-color: #f0f0f0;
+}
+
+.roles-list {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: none;
+}
+
+.roles-list.show {
+    display: block !important;
+}
+
+.roles-list label {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.roles-list label:hover {
+    background-color: #f5f5f5;
+}
+
+.roles-list input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.roles-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.roles-actions button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.roles-actions .accept-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.roles-actions .accept-button:hover {
+    background-color: #218838;
+}
+
+.roles-actions .cancel-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.roles-actions .cancel-button:hover {
+    background-color: #c82333;
+}
