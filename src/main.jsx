@@ -1,7 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { GeriatricoApp } from './GeriatricoApp'
+// import { GeriatricoApp } from './GeriatricoApp'
 import { BrowserRouter } from 'react-router-dom'
+import AdminDashboard from './geriatrico/page/AdminDashboard'
 // import TarjetaSedes from './geriatrico/components/Tarjetas-Sedes/TarjetasSedes'
 // import HomeGeneral from './geriatrico/page/HomeGeneral'
 
@@ -14,7 +15,7 @@ import { BrowserRouter } from 'react-router-dom'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-     <GeriatricoApp/>
+     <AdminDashboard/>
     </BrowserRouter>
   </StrictMode>
 )
