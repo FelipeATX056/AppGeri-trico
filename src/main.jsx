@@ -2,7 +2,8 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 
-import ProfileInformation from './geriatrico/page/profileInformation'
+
+import InventoryPage from './geriatrico/page/InventoryPage'
 
 
 
@@ -13,7 +14,7 @@ import ProfileInformation from './geriatrico/page/profileInformation'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-     <ProfileInformation/>
+     <InventoryPage/>
     </BrowserRouter>
   </StrictMode>
 )

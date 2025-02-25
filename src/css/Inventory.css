@@ -1,0 +1,106 @@
+/* Importación de la fuente Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Contenedor principal */
+.main-container {
+  display: flex; /* Usar flexbox para alinear el Sidebar y el contenido */
+  flex-direction: row; /* Alinear los elementos en fila */
+  min-height: 100vh; /* Para que ocupe toda la altura de la pantalla */
+}
+
+/* Estilos del contenido */
+.content {
+  flex-grow: 1; /* El contenido principal ocupa el resto del espacio */
+  padding: 20px; /* Espacio alrededor del contenido */
+}
+
+/* Estilos del título */
+.content h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Estilos del inventario */
+.inventory {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de la tarjeta del inventario */
+.inventory-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos de cada elemento del inventario */
+.inventory-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px; /* Aumenta el padding para más espacio */
+  border-bottom: 1px solid #ccc;
+  transition: transform 0.2s; /* Agrega transición para el hover */
+}
+
+.inventory-item:hover {
+  transform: translateY(-2px); /* Efecto de hover */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra en el hover */
+}
+
+.inventory-item:last-child {
+  border-bottom: none;
+}
+
+/* Estilos de los detalles del elemento */
+.inventory-details {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Estilos de la información del elemento */
+.inventory-info {
+  display: flex;
+  align-items: center;
+}
+
+.quantity {
+  font-size: 16px;
+  color: #777;
+  margin-right: 10px;
+}
+
+.icon {
+  font-size: 24px;
+  color: #999;
+}
+
+/* Media query para diseño responsivo */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column; /* Apilar el contenido en pantallas pequeñas */
+  }
+
+  .content {
+    padding: 10px; /* Reduce el padding en pantallas pequeñas */
+  }
+
+  .inventory {
+    padding: 10px; /* Reduce el padding en pantallas pequeñas */
+  }
+
+  .inventory-item {
+    padding: 10px; /* Reduce el padding en pantallas pequeñas */
+  }
+}
