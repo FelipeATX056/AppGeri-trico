@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import "../../../css/SideBar.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleLeft, faUser, faChevronDown, faStethoscope, faChartLine, faNotesMedical, faPills, faHandHoldingHeart } from '@fortawesome/free-solid-svg-icons';
+import ProfileInformation from '../../page/profileInformation';
+
+
 
 function SideBar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -26,7 +29,7 @@ function SideBar() {
   };
 
   return (
-    <div>
+    <div className="main-container">
       <nav id="sidebar" className={sidebarOpen ? '' : 'close'}>
         <ul>
           <li>
@@ -91,7 +94,12 @@ function SideBar() {
             </a>
           </li>
         </ul>
+
       </nav>
+
+      {/* Contenedor del contenido principal */}
+      <div className="content">
+      </div>
     </div>
   );
 }
