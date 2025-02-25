@@ -94,7 +94,6 @@ function SideBar() {
             </a>
           </li>
         </ul>
-
       </nav>
 
       {/* Contenedor del contenido principal */}
