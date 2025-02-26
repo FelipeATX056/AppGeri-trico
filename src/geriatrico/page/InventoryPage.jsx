@@ -3,6 +3,7 @@ import '../../css/Inventory.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPills, faBox } from '@fortawesome/free-solid-svg-icons';
 import SideBar from '../components/SideBar/SideBar';
+import PInformation from '../components/profile-information/PInformation';
 
 
   function InventoryPage() {
@@ -17,6 +18,7 @@ import SideBar from '../components/SideBar/SideBar';
       <div className="main-container">
         <SideBar /> {/* Renderiza el Sidebar aquí */}
         <div className="content">
+        <PInformation/> {/* Renderiza el PerfilInfomracion aquí */}
           <h2>Inventario</h2>
           <div className="inventory">
             <div className="inventory-card">

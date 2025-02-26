@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../../css/Diagnostic.css';
 import SideBar from '../components/SideBar/SideBar';
+import PInformation from '../components/profile-information/PInformation';
 
 function DiagnosticPage() {
     const [showModal, setShowModal] = useState(false);
@@ -17,6 +18,7 @@ function DiagnosticPage() {
       <div className="main-container">
         <SideBar/>
         <div className="content">
+          <PInformation/>
           <h2>Diagnóstico</h2>
           <div className="diagnostic-card">
             <div className="section">

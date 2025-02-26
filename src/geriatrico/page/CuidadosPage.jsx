@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../../css/Cuidados.css';
 import SideBar from '../components/SideBar/SideBar';
+import PInformation from '../components/profile-information/PInformation';
 
 
 function CuidadoPage() {
@@ -18,6 +19,7 @@ function CuidadoPage() {
     <div className="main-container">
       <SideBar />
       <div className="content">
+        <PInformation/>
         <h2>Cuidados de enfermería</h2>
         <div className="cuidado-card">
           <div className="cuidado-item">

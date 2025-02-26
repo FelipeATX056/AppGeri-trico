@@ -1,0 +1,65 @@
+/* Importación de la fuente Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Contenedor principal */
+.profilee-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  width: 100%; /* Asegura que ocupe todo el ancho */
+}
+
+/* Estilos del icono de perfil */
+.profile-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  font-size: 24px;
+  color: #555;
+}
+
+/* Estilos de la información de perfil */
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Asegura que ocupe todo el ancho */
+}
+
+/* Estilos del nombre de perfil */
+.profile-name {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Estilos del ID de perfil */
+.profile-id {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 5px;
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Estilos de la ubicación de perfil */
+.profile-location {
+  font-size: 14px;
+  color: #777;
+  text-align: left; /* Alinea el texto a la izquierda */
+}
