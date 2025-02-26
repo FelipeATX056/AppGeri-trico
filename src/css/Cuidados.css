@@ -1,0 +1,163 @@
+/* Importación de la fuente Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Contenedor principal */
+.main-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+/* Estilos del contenido */
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Estilos del título */
+.content h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Estilos de la tarjeta de cuidados */
+.cuidado-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de cada elemento de cuidado */
+.cuidado-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.cuidado-item:last-child {
+  border-bottom: none;
+}
+
+/* Estilos de las opciones */
+.options {
+  display: flex;
+  gap: 10px;
+}
+
+/* Estilos de las etiquetas */
+label {
+  font-size: 16px;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+label input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Estilos del checkbox */
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Estilos del botón de guardar */
+.save-button {
+  background-color: #009ee2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.save-button:hover {
+  background-color: #007acc;
+}
+
+/* Estilos del modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.modal-buttons button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirm {
+  background-color: #5cb85c;
+  color: white;
+}
+
+.cancel {
+  background-color: #d9534f;
+  color: white;
+}
+
+/* Media query para diseño responsivo */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .cuidado-card {
+    padding: 10px;
+  }
+
+  .cuidado-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .options {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+}
