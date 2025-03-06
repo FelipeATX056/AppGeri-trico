@@ -3,25 +3,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import Sidebar from '../components/SideBar/SideBar';
 import '../../css/ProfileInformation.css';
+import PInformation from '../components/profile-information/PInformation';
 
 function ProfileInformation() {
   return (
     <div className="main-container">
       <Sidebar />
       <div className="content">
-        <div className="info-container">
-          <h2>Perfil</h2>
-          <div className="profile-card">
-            <div className="info">
-              <FontAwesomeIcon icon={faUser} />
-              <div>
-                <strong>Nombre Completo:</strong> Juan Andres Gomez Ruiz<br />
-                <strong>C.C:</strong> 1072963222<br />
-                <strong>Ubicación:</strong> Popayán-Cauca Colombia
-              </div>
-            </div>
-            <a className="btn">Acudiente</a>
-          </div>
+        <PInformation/>
+      <div className="animate__animated animate__fadeInUp">
           <div className="info-card">
             <h2>Información Personal</h2>
             <div className="grid-4-columns">
@@ -76,7 +66,7 @@ function ProfileInformation() {
             </div>
             <span className="tag">Paciente cardiovascular</span>
           </div>
-        </div>
+      </div>
       </div>
     </div>
   );

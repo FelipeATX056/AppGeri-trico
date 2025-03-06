@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "../../../css/SideBar.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleLeft, faUser, faChevronDown, faStethoscope, faChartLine, faNotesMedical, faPills, faHandHoldingHeart } from '@fortawesome/free-solid-svg-icons';
-import ProfileInformation from '../../page/profileInformationPage';
+
 
 
 
@@ -30,6 +30,7 @@ function SideBar() {
 
   return (
     <div className="main-container">
+      <div className="animate__animated animate__fadeInLeft">
       <nav id="sidebar" className={sidebarOpen ? '' : 'close'}>
         <ul>
           <li>
@@ -46,7 +47,7 @@ function SideBar() {
             </button>
             <ul className={`sub-menu ${subMenuOpen['perfil'] ? 'show' : ''}`}>
               <div>
-                <li><a href="#">Inventario</a></li>
+                <li><a href="">Inventario</a></li>
               </div>
             </ul>
           </li>
@@ -99,7 +100,9 @@ function SideBar() {
       {/* Contenedor del contenido principal */}
       <div className="content">
       </div>
+      </div>
     </div>
+
   );
 }
 

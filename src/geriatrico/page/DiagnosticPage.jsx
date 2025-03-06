@@ -19,6 +19,7 @@ function DiagnosticPage() {
         <SideBar/>
         <div className="content">
           <PInformation/>
+          <div className="animate__animated animate__fadeInUp">
           <h2>Diagnóstico</h2>
           <div className="diagnostic-card">
             <div className="section">
@@ -61,6 +62,7 @@ function DiagnosticPage() {
               </div>
             </div>
           )}
+        </div>
         </div>
       </div>
     );

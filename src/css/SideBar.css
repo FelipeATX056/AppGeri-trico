@@ -3,11 +3,11 @@
 
 /* Variables de color */
 :root {
-  --base-clr: #e6e6e6;
+  --base-clr: #e0e0e0;
   --line-clr: #bdbdbd;
-  --hover-clr: #bdbdbd;
   --text-clr: #3D3D3D;
-  --accent-clr: #009ee2; /* Color de acento */
+  --accent-clr: #0090bc; /* Color de acento */
+  --hoveracent-clr: #3fd2ff32; /*  */
 }
 
 /* Estilos generales */
@@ -18,6 +18,9 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body{
+background: rgba(0, 0, 0, 0.111);
+}
 /* Contenedor principal */
 .main-container {
   display: flex; /* Usar flexbox para alinear el Sidebar y el contenido */
@@ -30,16 +33,20 @@
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
   height: 100vh;
-  width: 330px;
+  width: 360px;
   padding: 5px 1em;
   background-color: var(--base-clr);
   border-right: 1px solid var(--line-clr);
   position: sticky;
   top: 0;
+
   align-self: start;
   transition: 300ms ease-in-out;
   overflow: hidden;
   text-wrap: nowrap;
+  box-shadow: 20px 20px 60px #bebebe,
+  -20px -20px 60px #ffffff;
+  transition:  .5s ease; /* Transición suave */
 }
 
 /* Estilos del contenido */
@@ -50,31 +57,31 @@
 
 /* Otros estilos del Sidebar (sin cambios significativos) */
 #sidebar.close {
-  padding: 5px;
+  padding: 3.8px;
   width: 60px;
 }
 
 #sidebar ul {
   list-style: none;
+  
 }
 
 #sidebar > ul > li:first-child {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 16px;
+  
 }
 
 #sidebar > ul > li:first-child .logo {
   font-weight: 600;
 }
 
-#sidebar ul li.active a {
+#sidebar ul li:hover span {
   color: var(--accent-clr);
 }
 
-#sidebar ul li.active a svg {
-  fill: var(--accent-clr);
-}
+
 
 #sidebar a,
 #sidebar .dropdown-btn,
@@ -88,6 +95,7 @@
   gap: 1em;
   margin-left: 8px;
   font-size: 17px;
+  
 }
 
 .dropdown-btn {
@@ -99,7 +107,7 @@
   cursor: pointer;
 }
 
-#sidebar i {
+#sidebar  {
   flex-shrink: 0;
   fill: var(--text-clr);
 }
@@ -109,15 +117,21 @@
   flex-grow: 1;
 }
 
-#sidebar a:hover,
+#sidebar a:hover ,
 #sidebar .dropdown-btn:hover {
-  background-color: var(--hover-clr);
+  background-color: var(--hoveracent-clr);
+  transition: .3s;
 }
 
+#sidebar a:hover svg.svg-inline--fa,
+#sidebar .dropdown-btn:hover svg.svg-inline--fa {
+  color: var(--accent-clr); /* Usa tu variable de color de acento */
+}
 #sidebar .sub-menu {
   display: grid;
   grid-template-rows: 0fr;
   transition: 300ms ease-in-out;
+
 }
 
 #sidebar .sub-menu > div {
@@ -128,11 +142,11 @@
   grid-template-rows: 1fr;
 }
 
-.dropdown-btn i {
+.dropdown-btn svg.svg-inline--fa{
   transition: 200ms ease;
 }
 
-.rotate i:last-child {
+.rotate svg.svg-inline--fa:last-child {
   rotate: 180deg;
 }
 

@@ -7,3 +7,9 @@ export * from './ProfilePage';
 export * from './GeriatricoPage';
 export * from './RolesPage';
 export * from './GeriatricoInactivoPage';
+
+// export * from './profileInformationPage'
+// export * from './InventoryPage'
+// export * from './DiagnosticPage'
+// export * from './CuidadosPage'
+// export * from './medicationHistoryPage'

@@ -1,8 +1,12 @@
 import { StrictMode } from 'react'
+import 'animate.css';
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
-import CuidadoPage from './geriatrico/page/CuidadosPage'
 
+// import MedicationHistoryPage from './geriatrico/page/medicationHistoryPage'
+import ProfileInformation from './geriatrico/page/profileInformationPage';
+// import DiagnosticPage from './geriatrico/page/DiagnosticPage';
+// import InventoryPage from './geriatrico/page/InventoryPage';
 
 
 
@@ -12,7 +16,7 @@ import CuidadoPage from './geriatrico/page/CuidadosPage'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-     <CuidadoPage/>
+     <ProfileInformation/>
     </BrowserRouter>
   </StrictMode>
 )

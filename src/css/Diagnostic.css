@@ -25,17 +25,20 @@
 /* Estilos del título */
 .content h2 {
   font-size: 24px;
-  color: #333;
+  color: #0090bc;
   margin-bottom: 20px;
   text-align: left;
 }
 
 /* Estilos de la tarjeta de diagnóstico */
 .diagnostic-card {
-  background-color: #f9f9f9;
+  background-color: #e8e8e8;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  box-shadow: 20px 20px 60px #bebebe,
+  -20px -20px 60px #ffffff;
 }
 
 /* Estilos de las secciones */
@@ -61,17 +64,14 @@
 .subsection-label {
   display: block;
   font-size: 16px;
-  color: #777;
+  color: #0090bc;
   margin-bottom: 5px;
-  font-weight: bold;
-  background-color: #f0f0f0;
+  font-weight: 400;
+  background-color: #3fd2ff32;
   padding: 5px;
   border-radius: 5px;
 }
 
-.subsection-label:hover {
-  background-color: #e0e0e0;
-}
 
 /* Estilos del textarea */
 textarea {
@@ -85,17 +85,19 @@ textarea {
 
 /* Estilos del botón de guardar */
 .save-button {
-  background-color: #009ee2;
+  background-color: #0090bc;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 18px;
+  box-shadow: 0 0 1px #ffffff, inset 0 -2.5px 3px #66dbff,
+  inset 0 3px 3px rgba(0, 0, 0, 0.181); /* Inner shadow */
 }
 
 .save-button:hover {
-  background-color: #007acc;
+  background-color: #01769a;
 }
 
 /* Estilos del modal */
@@ -133,12 +135,25 @@ textarea {
 }
 
 .confirm {
-  background-color: #5cb85c;
+  background-color: #0090bc;
+  color: white;
+  box-shadow: 0 0 1px #ffffff, inset 0 -2.5px 3px #66dbff,
+  inset 0 3px 3px rgba(0, 0, 0, 0.181); /* Inner shadow */
+}
+.confirm:hover {
+  background-color: #01769a;
   color: white;
 }
 
 .cancel {
-  background-color: #d9534f;
+  background-color: #3d3d3d;
+  color: white;
+  box-shadow: 0 0 1px #ffffff, inset 0 -2.5px 3px #9f9f9f,
+  inset 0 3px 3px rgba(0, 0, 0, 0.181); /* Inner shadow */
+}
+
+.cancel:hover {
+  background-color: #4f4f4f;
   color: white;
 }
 

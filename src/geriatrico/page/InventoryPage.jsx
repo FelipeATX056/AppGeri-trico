@@ -19,6 +19,7 @@ import PInformation from '../components/profile-information/PInformation';
         <SideBar /> {/* Renderiza el Sidebar aquí */}
         <div className="content">
         <PInformation/> {/* Renderiza el PerfilInfomracion aquí */}
+        <div className="animate__animated animate__fadeInUp">
           <h2>Inventario</h2>
           <div className="inventory">
             <div className="inventory-card">
@@ -37,6 +38,7 @@ import PInformation from '../components/profile-information/PInformation';
               ))}
             </div>
           </div>
+        </div>
         </div>
       </div>
     );

@@ -25,17 +25,19 @@
 /* Estilos del título */
 .content h2 {
   font-size: 24px;
-  color: #333;
+  color: #0090bc;
   margin-bottom: 20px;
   text-align: left;
+  
 }
 
 /* Estilos de la tarjeta de cuidados */
 .cuidado-card {
-  background-color: #f9f9f9;
+  background-color: #eeeeee;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 20px 20px 60px #bebebe,
+  -20px -20px 60px #ffffff;
 }
 
 /* Estilos de cada elemento de cuidado */
@@ -78,7 +80,7 @@ input[type="checkbox"] {
 
 /* Estilos del botón de guardar */
 .save-button {
-  background-color: #009ee2;
+  background-color: #0090bc;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -86,6 +88,9 @@ input[type="checkbox"] {
   cursor: pointer;
   font-size: 18px;
   margin-top: 20px;
+  transition: .3s;
+  box-shadow: 0 0 1px #ffffff, inset 0 -2.5px 3px #66dbff,
+    inset 0 3px 3px rgba(0, 0, 0, 0.181); /* Inner shadow */
 }
 
 .save-button:hover {
@@ -103,6 +108,7 @@ input[type="checkbox"] {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .modal-content {
@@ -111,6 +117,9 @@ input[type="checkbox"] {
   border-radius: 10px;
   text-align: center;
   width: 300px;
+  box-shadow: 20px 20px 60px #0000002f,
+  -20px -20px 60px #00000013;
+
 }
 
 .modal-buttons {
@@ -127,13 +136,121 @@ input[type="checkbox"] {
 }
 
 .confirm {
-  background-color: #5cb85c;
+  background-color: #0090bc;
+  color: white;
+  box-shadow: 0 0 1px #ffffff, inset 0 -2.5px 3px #66dbff,
+  inset 0 3px 3px rgba(0, 0, 0, 0.181); /* Inner shadow */
+}
+.confirm:hover {
+  background-color: #01769a;
   color: white;
 }
 
 .cancel {
-  background-color: #d9534f;
+  background-color: #3d3d3d;
   color: white;
+  box-shadow: 0 0 1px #ffffff, inset 0 -2.5px 3px #9f9f9f,
+  inset 0 3px 3px rgba(0, 0, 0, 0.181); /* Inner shadow */
+}
+
+.cancel:hover {
+  background-color: #4f4f4f;
+  color: white;
+}
+/* From Uiverse.io by elijahgummer */ 
+/* Hide the default checkbox */
+.container input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+  border: 3px solid #0090bc4d;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 1.3em;
+  width: 1.3em;
+  background-color: #0090bc;
+  border-bottom: 1.5px solid #0090bc; /* Bottom stroke */
+  box-shadow: 0 0 1px #ffffff, inset 0 -2.5px 3px #66dbff,
+    inset 0 3px 3px rgba(0, 0, 0, 0.181); /* Inner shadow */
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out; /* Transition for smooth animation */
+}
+
+/* When the checkbox is checked, modify the checkmark appearance */
+.container input:checked ~ .checkmark {
+  transform: translateY(40px); /* Move down */
+  animation: wipeDown 0.3s ease-in-out forwards; /* Apply wipe animation */
+}
+
+/* When the checkbox is not checked, modify the checkmark appearance */
+.container input:not(:checked) ~ .checkmark {
+  transform: translateY(-40px); /* Move up */
+  animation: wipeUp 0.3s ease-in-out forwards; /* Apply wipe animation */
+}
+
+/* Keyframes for wipe animations */
+@keyframes wipeDown {
+  0% {
+    transform: translateY(0); /* Starting position */
+  }
+  100% {
+    transform: translateY(40px); /* End position */
+  }
+}
+
+@keyframes wipeUp {
+  0% {
+    transform: translateY(40); /* Starting position */
+  }
+  100% {
+    transform: translateY(0px); /* End position */
+  }
+}
+
+/* Create the checkmark/indicator */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.34); /* Icon drop shadow */
 }
 
 /* Media query para diseño responsivo */

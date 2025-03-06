@@ -5,6 +5,8 @@ import "../../../css/PInformation.css";
 
 function PInformation() {
   return (
+    
+    <div className="animate__animated animate__fadeInDown">
     <div className="profilee-card">
       <div className="profile-icon">
         <FontAwesomeIcon icon={faUser} />
@@ -14,6 +16,7 @@ function PInformation() {
         <div className="profile-id">10729332</div>
         <div className="profile-location">Popayán-Cauca Colombia</div>
       </div>
+    </div>
     </div>
   );
 }

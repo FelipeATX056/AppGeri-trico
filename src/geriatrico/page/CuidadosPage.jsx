@@ -3,7 +3,6 @@ import '../../css/Cuidados.css';
 import SideBar from '../components/SideBar/SideBar';
 import PInformation from '../components/profile-information/PInformation';
 
-
 function CuidadoPage() {
   const [showModal, setShowModal] = useState(false);
 
@@ -16,61 +15,99 @@ function CuidadoPage() {
   };
 
   return (
+    
     <div className="main-container">
       <SideBar />
       <div className="content">
         <PInformation/>
+        <div className="animate__animated animate__fadeInUp">
         <h2>Cuidados de enfermería</h2>
         <div className="cuidado-card">
           <div className="cuidado-item">
             <span>Baño de paciente</span>
             <div className="options">
-              <label>
-                <input type="checkbox" /> Cama
-              </label>
-              <label>
-                <input type="checkbox" defaultChecked /> Ducha
-              </label>
+              <label className="container">
+                <input type="checkbox" />
+                <div className="checkmark"></div>
+              </label> Cama
+              <label className="container">
+                <input type="checkbox" />
+                <div className="checkmark"></div>
+              </label> Ducha
             </div>
           </div>
           <div className="cuidado-item">
             <span>Toma de signos vitales</span>
             <div className="options">
-              <label>
-                <input type="checkbox" /> PA
-              </label>
-              <label>
-                <input type="checkbox" /> FC
-              </label>
-              <label>
-                <input type="checkbox" defaultChecked /> FR
-              </label>
-              <label>
-                <input type="checkbox" /> T
+              <label className="container">
+                <input type="checkbox" />
+                <div className="checkmark"></div>
+              </label> PA
+              <label className="container">
+                <input type="checkbox" />
+                <div className="checkmark"></div>
+              </label> FC
+              <label className="container">
+                <input type="checkbox" />
+                <div className="checkmark"></div>
+              </label> FR
+              <label className="container">
+                <input type="checkbox" />
+                <div className="checkmark"></div>
+              </label> T
+            </div>
+          </div>
+          <div className="cuidado-item">
+            <span>Control de peso</span>
+            <div className="options">
+              <label className="container">
+                <input type="checkbox" />
+                <div className="checkmark"></div>
+              </label>      
+            </div>
+          </div>
+          <div className="cuidado-item">
+            <span>Control de glusemia</span>
+            <div className="options">
+              <label className="container">
+                <input type="checkbox" />
+                <div className="checkmark"></div>
               </label>
             </div>
           </div>
           <div className="cuidado-item">
-            <span>Control Peso</span>
-            <input type="checkbox" />
-          </div>
-          <div className="cuidado-item">
-            <span>Control Glusemia</span>
-            <input type="checkbox" />
-          </div>
-          <div className="cuidado-item">
             <span>Líquidos Administrativos</span>
-            <input type="checkbox" />
+            <div className="options">
+              <label className="container">
+                <input type="checkbox" />
+                <div className="checkmark"></div>
+              </label>
+            </div>
           </div>
           <div className="cuidado-item">
             <span>Control de XXXX</span>
-            <input type="checkbox" />
+            <div className="options">
+              <label className="container">
+                <input type="checkbox" />
+                <div className="checkmark"></div>
+              </label> Opción 1
+              <label className="container">
+                <input type="checkbox" />
+                <div className="checkmark"></div>
+              </label> Opción 2
+            </div>
           </div>
           <div className="cuidado-item">
             <span>Administrar medicamentos</span>
-            <input type="checkbox" defaultChecked />
+            <div className="options">
+              <label className="container">
+                <input type="checkbox" defaultChecked />
+                <div className="checkmark"></div>
+              </label> Rutinario
+            </div>
           </div>
           <button className="save-button" onClick={handleSave}>Guardar</button>
+        </div>
         </div>
 
         {showModal && (

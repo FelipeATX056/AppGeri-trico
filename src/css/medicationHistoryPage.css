@@ -1,0 +1,110 @@
+/* Importación de la fuente Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+/* Contenedor principal */
+.main-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+/* Estilos del contenido */
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  
+}
+
+/* Estilos del título */
+.content h2 {
+  font-size: 24px;
+  color: #0090bc;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Estilos del historial de medicamentos */
+.medication-history {
+  background-color: #efefef;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 20px 20px 60px #bebebe,
+  -20px -20px 60px #ffffff;
+  position: relative;
+}
+
+/* Estilos de cada día de medicación */
+.medication-day {
+  margin-bottom: 50px;
+  
+}
+
+/* Estilos de la fecha de medicación */
+.medication-date {
+  font-size: 18px;
+  font-weight: 600;
+  color: #3d3d3d;
+  margin-bottom: 10px;
+}
+
+/* Estilos de cada elemento de medicación */
+.medication-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 3px dashed #c8c8c8;
+}
+
+.medication-item:last-child {
+  border-bottom: none;
+}
+
+/* Estilos del nombre del medicamento */
+.medication-name {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Estilos de la hora del medicamento */
+.medication-time {
+  font-size: 16px;
+  color: #777;
+  
+}
+
+/* Media query para diseño responsivo */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .medication-history {
+    padding: 10px;
+  }
+
+  .medication-date {
+    font-size: 16px;
+  }
+
+  .medication-name {
+    font-size: 14px;
+  }
+
+  .medication-time {
+    font-size: 14px;
+  }
+}
