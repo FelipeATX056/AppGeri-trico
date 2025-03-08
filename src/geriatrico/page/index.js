@@ -11,5 +11,6 @@ export * from './GeriatricoInactivoPage';
 // export * from './profileInformationPage'
 // export * from './InventoryPage'
 // export * from './DiagnosticPage'
-// export * from './CuidadosPage'
+// export * from './Recomendaciones.jsx'
 // export * from './medicationHistoryPage'
+// export * from './CuidadosPage'

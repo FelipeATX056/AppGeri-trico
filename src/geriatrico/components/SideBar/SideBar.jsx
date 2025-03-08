@@ -34,7 +34,7 @@ function SideBar() {
       <nav id="sidebar" className={sidebarOpen ? '' : 'close'}>
         <ul>
           <li>
-            <span className="logo">Logo</span>
+          <img src="/Logo-Fundacion.png" alt="Logo" className="logo" />
             <button onClick={toggleSidebar} id="toggle-btn" className={sidebarOpen ? '' : 'rotate'}>
               <FontAwesomeIcon icon={faAngleDoubleLeft} />
             </button>

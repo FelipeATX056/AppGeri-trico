@@ -28,6 +28,11 @@ background: rgba(0, 0, 0, 0.111);
   min-height: 100vh; /* Para que ocupe toda la altura de la pantalla */
 }
 
+.logo {
+  width: 9.5 rem;
+  height: 140px;
+  margin-right: 10px; /* Espacio entre la imagen y el botón */
+}
 /* Estilos del Sidebar */
 #sidebar {
   font-family: 'Poppins', sans-serif;
