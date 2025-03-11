@@ -1,0 +1,160 @@
+/* Importación de la fuente Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Contenedor principal */
+.main-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+/* Estilos del contenido */
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  position: relative;
+}
+
+/* Estilos del encabezado del informe */
+.report-header {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.report-header h2 {
+  font-size: 24px;
+  color: #0090bc;
+  margin-bottom: 10px;
+}
+
+.report-header .report-date {
+  font-size: 16px;
+  color: #777;
+  text-align: right;
+}
+
+/* Estilos del área de texto del informe */
+.report-content {
+  width: 100%;
+  min-height: 300px;
+  padding: 20px;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+/* Estilos del botón de guardar */
+.save-button {
+  background-color: #0090bc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+  box-shadow: 0 0 1px #ffffff, inset 0 -2.5px 3px #66dbff,
+    inset 0 3px 3px rgba(0, 0, 0, 0.181); /* Inner shadow */
+}
+
+.save-button:hover {
+  background-color: #007acc;
+}
+
+/* Estilos del modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.modal-buttons button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirm {
+  background-color: #0090bc;
+  color: white;
+  box-shadow: 0 0 1px #ffffff, inset 0 -2.5px 3px #66dbff,
+  inset 0 3px 3px rgba(0, 0, 0, 0.181); /* Inner shadow */
+}
+.confirm:hover {
+  background-color: #01769a;
+  color: white;
+}
+
+.cancel {
+  background-color: #3d3d3d;
+  color: white;
+  box-shadow: 0 0 1px #ffffff, inset 0 -2.5px 3px #9f9f9f,
+  inset 0 3px 3px rgba(0, 0, 0, 0.181); /* Inner shadow */
+}
+
+.cancel:hover {
+  background-color: #4f4f4f;
+  color: white;
+}
+/* Media query para diseño responsivo */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .report-header {
+    padding: 10px;
+  }
+
+  .report-header h2 {
+    font-size: 20px;
+  }
+
+  .report-header .report-date {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .report-content {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

@@ -32,6 +32,18 @@ function ProfileInformation() {
                 <input type="text" placeholder="23/06/1956" readOnly />
               </div>
               <div>
+                <label>E.P.S:</label>
+                <input type="text" placeholder="Nueva EPS" readOnly />
+              </div>
+              <div>
+                <label>Nombre E.P.S:</label>
+                <input type="text" placeholder="EMSSANAR" readOnly />
+              </div>
+              <div>
+                <label>Régimen:</label>
+                <input type="text" placeholder="Contributivo" readOnly />
+              </div>
+              <div>
                 <label>C.C:</label>
                 <input type="text" placeholder="1072963222" />
               </div>
@@ -39,10 +51,7 @@ function ProfileInformation() {
                 <label>Edad:</label>
                 <input type="text" placeholder="68 años" />
               </div>
-              <div>
-                <label>E.P.S:</label>
-                <input type="text" placeholder="Nueva EPS" readOnly />
-              </div>
+             
               <div>
                 <label>Contacto:</label>
                 <input type="text" placeholder="3162718887" />
@@ -52,6 +61,10 @@ function ProfileInformation() {
                 <input type="text" placeholder="60 Kg" />
               </div>
               <div>
+                <label>Grupo Sanguineo:</label>
+                <input type="text" placeholder="A+" />
+              </div>
+              <div>
                 <label>Dirección:</label>
                 <input type="text" placeholder="Calle 26N 3A" />
               </div>
@@ -59,10 +72,7 @@ function ProfileInformation() {
                 <label>Tel. Emergencia:</label>
                 <input type="text" placeholder="3114528675" />
               </div>
-              <div>
-                <label>Régimen:</label>
-                <input type="text" placeholder="Contributivo" readOnly />
-              </div>
+              
             </div>
             <span className="tag">Paciente cardiovascular</span>
           </div>
