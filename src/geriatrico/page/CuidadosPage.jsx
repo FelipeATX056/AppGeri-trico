@@ -51,19 +51,19 @@ function CuidadoPage() {
             <div className="cuidado-item">
               <span>Toma de signos vitales</span>
               <div className="options">
-                <label className="container">
+                <label title="presión Arterial" className="container">
                   <input type="checkbox" />
                   <div className="checkmark"></div>
                 </label> PA
-                <label className="container">
+                <label title="Frecuencia Cardiaca" className="container">
                   <input type="checkbox" />
                   <div className="checkmark"></div>
                 </label> FC
-                <label className="container">
+                <label title="Frecuencia Respiratoria" className="container">
                   <input type="checkbox" />
                   <div className="checkmark"></div>
                 </label> FR
-                <label className="container">
+                <label title="Temperatura" className="container">
                   <input type="checkbox" />
                   <div className="checkmark"></div>
                 </label> T

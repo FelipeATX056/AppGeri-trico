@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import "../../../css/SideBar.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDoubleLeft, faUser, faChevronDown, faStethoscope, faChartLine, faNotesMedical, faPills, faHandHoldingHeart } from '@fortawesome/free-solid-svg-icons';
+import { 
+  faAngleDoubleLeft, faHistory, faUser, faChevronDown, faStethoscope, faChartLine, faNotesMedical, faPills, faHandHoldingHeart , faLocationArrow
+} from '@fortawesome/free-solid-svg-icons';
 
 function SideBar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -89,6 +91,18 @@ function SideBar() {
               <a href="#">
                 <FontAwesomeIcon icon={faHandHoldingHeart} />
                 <span>Cuidados</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <FontAwesomeIcon icon={faLocationArrow} />
+                <span>Seguimiento</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <FontAwesomeIcon icon={faHistory} />
+                <span>Historial</span>
               </a>
             </li>
           </ul>

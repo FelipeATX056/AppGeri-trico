@@ -1,0 +1,199 @@
+/* Importación de la fuente Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Contenedor principal */
+.main-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.content-area {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f0f2f5; /* Fondo gris muy claro */
+}
+
+.gestionar-title {
+  font-size: 24px;
+  color: #0090BC;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Barra de búsqueda */
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-input-field {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ced4da; /* Borde gris claro */
+  border-radius: 5px;
+  background-color: #ffffff; /* Fondo blanco */
+  color: #495057;
+}
+
+.search-btn {
+  background-color: #0090BC;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #00789c;
+}
+
+/* Tarjeta de usuario */
+.user-card-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espacio entre elementos */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  margin-bottom: 20px;
+  transition: .3S;
+  position: relative;
+}
+
+.user-card-container:hover {
+transform: translateY(-5px);
+}
+
+.user-icon-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e9ecef; /* Fondo grisáceo para el icono */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.user-icon {
+  font-size: 25px;
+  color: #495057; /* Color gris para el icono */
+}
+
+.user-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #343a40; /* Color oscuro para el nombre */
+  margin-bottom: 5px;
+}
+
+.user-id,
+.user-role {
+  font-size: 14px;
+  color: #6c757d; /* Color gris para los detalles */
+}
+
+.user-role{
+color: #0090bc;
+font-size: 16px;
+font-weight: 600;
+}
+
+.info-button {
+  background-color: #0090bc;
+  color: white;
+  border: none;
+  border-radius: 50%; /* Forma circular */
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-button:hover {
+  background-color: #00789c;
+}
+
+/* Estilos del modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+}
+
+.close-modal {
+  background-color: #009ee2;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+/* Diseño Responsive */
+@media (max-width: 768px) {
+  .content-area {
+    padding: 10px;
+  }
+
+  .gestionar-title {
+    font-size: 20px;
+  }
+
+  .search-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-input-field {
+    margin-bottom: 10px;
+  }
+
+  .search-btn {
+    width: 100%;
+  }
+
+  .user-card-container {
+    padding: 10px;
+  }
+
+  .user-name {
+    font-size: 16px;
+  }
+}
+
