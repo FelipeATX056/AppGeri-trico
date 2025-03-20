@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 
 
-
+//Vistas Enfermero-Pacientes
 
 // import ProfileInformation from './geriatrico/page/profileInformationPage';
 // import InventoryPage from './geriatrico/page/InventoryPage';
@@ -19,7 +19,10 @@ import { BrowserRouter } from 'react-router-dom'
 // import HistorialPage from './geriatrico/page/HistorialPage';
 // import GestionarUsuarioPage from './geriatrico/page/GestionarUsuarios';
 
-import CuadroTurnosPage from './geriatrico/page/CuadroTurnosPage';
+
+//Vistas Enfermero
+
+// import CuadroTurnosPage from './geriatrico/page/CuadroTurnosPage';
 import CrearTurnoPage from './geriatrico/page/CrearTurnoPage';
 
 
@@ -41,8 +44,8 @@ createRoot(document.getElementById('root')).render(
     {/* <HistorialPage/> */}
     {/* <GestionarUsuarioPage/> */}
 
-    <CuadroTurnosPage/>
-    {/* <CrearTurnoPage/> */}
+    {/* <CuadroTurnosPage/> */}
+    <CrearTurnoPage/>
 
 
     </BrowserRouter>

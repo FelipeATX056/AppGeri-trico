@@ -5,13 +5,11 @@ import SideBarEnfermero from '../components/SideBar-Enfermero/SideBarEnfermero';
 import '../../css/CrearTurno.css';
 
 function CrearTurnoPage() {
-  const [dia, setDia] = useState('');
   const [fechaInicio, setFechaInicio] = useState('');
   const [fechaFin, setFechaFin] = useState('');
   const [turnoDia, setTurnoDia] = useState('');
   const [turnoNoche, setTurnoNoche] = useState('');
   const [horasTrabajadas, setHorasTrabajadas] = useState('');
-  const [enfermero, setEnfermero] = useState('');
   const [showModal, setShowModal] = useState(false);
 
   const handleCrearTurno = () => {
@@ -42,19 +40,6 @@ function CrearTurnoPage() {
         <h1><FontAwesomeIcon icon={faCalendarDay} /> Crear Turno</h1>
         <div className="crear-turno-form-container">
           <form className="crear-turno-form">
-            <div className="form-group">
-              <label><FontAwesomeIcon icon={faClock} /> Día:</label>
-              <select value={dia} onChange={(e) => setDia(e.target.value)}>
-                <option value="">Seleccione</option>
-                <option value="Lunes">Lunes</option>
-                <option value="Martes">Martes</option>
-                <option value="Miércoles">Miércoles</option>
-                <option value="Jueves">Jueves</option>
-                <option value="Viernes">Viernes</option>
-                <option value="Sábado">Sábado</option>
-                <option value="Domingo">Domingo</option>
-              </select>
-            </div>
             <div className="form-group">
               <label><FontAwesomeIcon icon={faCalendarDay} /> Fecha Inicio:</label>
               <input
@@ -87,6 +72,15 @@ function CrearTurnoPage() {
                 value={turnoNoche}
                 onChange={(e) => setTurnoNoche(e.target.value)}
                 placeholder="Ej: 05:00 PM - 09:00 PM"
+              />
+            </div>
+            <div className="form-group">
+              <label><FontAwesomeIcon icon={faClock} /> Horas Trabajadas:</label>
+              <input
+                type="text"
+                value={horasTrabajadas}
+                onChange={(e) => setHorasTrabajadas(e.target.value)}
+                placeholder="Ej: 8:30 Horas"
               />
             </div>
             <button className="crear-turno-button" onClick={handleCrearTurno}>
