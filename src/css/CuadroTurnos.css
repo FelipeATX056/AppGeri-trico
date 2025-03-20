@@ -1,0 +1,170 @@
+/* CuadroTurnos.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.turnos-content {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #0090bc;
+  margin-bottom: 2rem;
+}
+
+.turnos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.turnos-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+}
+
+.turnos-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.turnos-header h2 {
+  font-size: 1.2rem;
+  color: #4a5568;
+}
+
+.turnos-header p {
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+.bitacora-button {
+  background-color: #009ee2;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bitacora-button:hover {
+  background-color: #007acc;
+}
+
+.actividades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.actividad-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background-color: #f7fafc;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.actividad-item span {
+  font-size: 0.9rem;
+  color: #2d3748;
+}
+
+.actividad-item svg {
+  font-size: 1.2rem;
+  color: #4299e1;
+}
+
+.resumen-turnos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.resumen-turnos p {
+  font-size: 0.9rem;
+  color: #718096;
+}
+
+.resumen-turnos strong {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+/* Modal de Bitácora */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 400px;
+}
+
+.bitacora-textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.modal-buttons button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel {
+  background-color: #3d3d3d;
+  color: white;
+  box-shadow: 0 0 1px #ffffff, inset 0 -2.5px 3px #9f9f9f,
+  inset 0 3px 3px rgba(0, 0, 0, 0.181); /* Inner shadow */
+}
+
+.confirm {
+  background-color: #0090bc;
+  color: white;
+  box-shadow: 0 0 1px #ffffff, inset 0 -2.5px 3px #66dbff,
+  inset 0 3px 3px rgba(0, 0, 0, 0.181); /* Inner shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .turnos-content {
+    padding: 1rem;
+  }
+  
+  .turnos-grid {
+    grid-template-columns: 1fr;
+  }
+}

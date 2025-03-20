@@ -6,6 +6,8 @@ import { BrowserRouter } from 'react-router-dom'
 
 
 
+
+
 // import ProfileInformation from './geriatrico/page/profileInformationPage';
 // import InventoryPage from './geriatrico/page/InventoryPage';
 // import DiagnosticPage from './geriatrico/page/DiagnosticPage';
@@ -14,7 +16,11 @@ import { BrowserRouter } from 'react-router-dom'
 // import MedicationHistoryPage from './geriatrico/page/medicationHistoryPage'
 // import CuidadoPage from './geriatrico/page/CuidadosPage';
 // import SeguimientoPage from './geriatrico/page/SeguimientoPage';
-import GestionarUsuarioPage from './geriatrico/page/GestionarUsuarios';
+// import HistorialPage from './geriatrico/page/HistorialPage';
+// import GestionarUsuarioPage from './geriatrico/page/GestionarUsuarios';
+
+import CuadroTurnosPage from './geriatrico/page/CuadroTurnosPage';
+import CrearTurnoPage from './geriatrico/page/CrearTurnoPage';
 
 
 
@@ -32,7 +38,11 @@ createRoot(document.getElementById('root')).render(
     {/* <MedicationHistoryPage/> */}
     {/* <CuidadoPage/> */}
     {/* <SeguimientoPage/> */}
-    <GestionarUsuarioPage/>
+    {/* <HistorialPage/> */}
+    {/* <GestionarUsuarioPage/> */}
+
+    <CuadroTurnosPage/>
+    {/* <CrearTurnoPage/> */}
 
 
     </BrowserRouter>
