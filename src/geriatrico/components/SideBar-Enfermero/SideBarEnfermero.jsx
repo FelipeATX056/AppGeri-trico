@@ -41,18 +41,6 @@ function SideBarEnfermero() {
                 <span>Bitácoras</span>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <FontAwesomeIcon />
-                <span>xxx</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <FontAwesomeIcon />
-                <span>xxx</span>
-              </a>
-            </li>
           </ul>
         </nav>
 

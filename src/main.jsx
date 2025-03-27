@@ -2,6 +2,8 @@ import { StrictMode } from 'react'
 import 'animate.css';
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
+import UsuariosGeneral from './geriatrico/page/UsuariosGeneral';
+// import ProfileAcudiente from './geriatrico/page/ProfileAcudiente';
 
 
 
@@ -23,7 +25,9 @@ import { BrowserRouter } from 'react-router-dom'
 //Vistas Enfermero
 
 // import CuadroTurnosPage from './geriatrico/page/CuadroTurnosPage';
-import CrearTurnoPage from './geriatrico/page/CrearTurnoPage';
+// import CrearTurnoPage from './geriatrico/page/CrearTurnoPage';
+
+
 
 
 
@@ -45,7 +49,12 @@ createRoot(document.getElementById('root')).render(
     {/* <GestionarUsuarioPage/> */}
 
     {/* <CuadroTurnosPage/> */}
-    <CrearTurnoPage/>
+    {/* <CrearTurnoPage/> */}
+
+
+<UsuariosGeneral/>
+
+{/* <ProfileAcudiente/> */}
 
 
     </BrowserRouter>
