@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import 'animate.css';
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
-import UsuariosGeneral from './geriatrico/page/UsuariosGeneral';
+// import UsuariosGeneral from './geriatrico/page/UsuariosGeneral';
 // import ProfileAcudiente from './geriatrico/page/ProfileAcudiente';
 
 
@@ -11,7 +11,7 @@ import UsuariosGeneral from './geriatrico/page/UsuariosGeneral';
 //Vistas Enfermero-Pacientes
 
 // import ProfileInformation from './geriatrico/page/profileInformationPage';
-// import InventoryPage from './geriatrico/page/InventoryPage';
+import InventoryPage from './geriatrico/page/InventoryPage';
 // import DiagnosticPage from './geriatrico/page/DiagnosticPage';
 // import RecomendacionesPage from './geriatrico/page/Recomendaciones';
 // import InformePage from './geriatrico/page/InformePage';
@@ -38,7 +38,7 @@ createRoot(document.getElementById('root')).render(
     <BrowserRouter>
      
     {/* <ProfileInformation/> */}
-    {/* <InventoryPage/> */}
+    <InventoryPage/>
     {/* <DiagnosticPage/> */}
     {/* <RecomendacionesPage/> */}
     {/* <InformePage/> */}
@@ -52,7 +52,7 @@ createRoot(document.getElementById('root')).render(
     {/* <CrearTurnoPage/> */}
 
 
-<UsuariosGeneral/>
+{/* <UsuariosGeneral/> */}
 
 {/* <ProfileAcudiente/> */}
 
